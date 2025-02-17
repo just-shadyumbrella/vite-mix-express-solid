@@ -15,6 +15,7 @@ const App: Component = () => {
         <a class={styles.link} href='https://github.com/solidjs/solid' target='_blank' rel='noopener noreferrer'>
           Learn Solid
         </a>
+        <br />
         <code>{JSON.stringify(json())}</code>
       </header>
     </div>
