@@ -1,8 +1,7 @@
 // https://github.com/egoist/vite-plugin-mix/issues/33
 
-import { defineConfig } from 'vite'
+import { defineConfig, type Plugin } from 'vite'
 import solidPlugin from 'vite-plugin-solid'
-import type { Plugin } from 'vite'
 import type { Adapter } from 'vite-plugin-mix'
 import mixPlugin from 'vite-plugin-mix'
 
