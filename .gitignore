@@ -24,7 +24,9 @@ app.config.timestamp_*.js
 # Temp
 gitignore
 
-# Only generated when using pnpm
+# Package manager lock files
+package-lock.json
+yarn.lock
 pnpm-lock.yaml
 
 # System Files
