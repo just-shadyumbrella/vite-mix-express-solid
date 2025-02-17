@@ -1,24 +1,25 @@
 {
-  "name": "vite-mix-express-solid",
-  "private": true,
+  "name": "vite-template-solid",
   "version": "0.0.0",
+  "description": "",
   "type": "module",
   "scripts": {
+    "start": "vite",
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "build": "vite build",
+    "serve": "vite preview"
   },
-  "dependencies": {
-    "@solidjs/router": "latest",
-    "express": "latest",
-    "solid-js": "latest",
-    "vite-plugin-mix": "latest"
-  },
+  "license": "MIT",
   "devDependencies": {
-    "@types/express": "latest",
-    "@types/node": "latest",
     "typescript": "latest",
     "vite": "latest",
-    "vite-plugin-solid": "latest"
+    "vite-plugin-solid": "latest",
+    "vite-plugin-mix": "latest",
+    "@types/node": "latest",
+    "@types/express": "latest"
+  },
+  "dependencies": {
+    "express": "latest",
+    "solid-js": "latest"
   }
 }

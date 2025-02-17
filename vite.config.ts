@@ -1,5 +1,7 @@
+// https://github.com/egoist/vite-plugin-mix/issues/33
+
 import { defineConfig } from 'vite'
-import solid from 'vite-plugin-solid'
+import solidPlugin from 'vite-plugin-solid'
 import type { Plugin } from 'vite'
 import type { Adapter } from 'vite-plugin-mix'
 import mixPlugin from 'vite-plugin-mix'
@@ -19,10 +21,8 @@ const mix = (mixPlugin as unknown as Mix).default
 
 // use mix as function
 export default defineConfig({
-  plugins: [
-    solid(),
-    mix({
-      handler: './server/index.ts',
-    }),
-  ],
+  plugins: [solidPlugin(), mix({ handler: './src/server' })],
+  build: {
+    target: 'esnext',
+  },
 })
